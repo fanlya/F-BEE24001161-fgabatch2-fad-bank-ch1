@@ -30,7 +30,6 @@ function mainFunction() {
                 alert("input yang anda masukkan tidak valid! ");
             } else {
                 saldo = tambahSaldo(saldo, ubahSaldo);
-                console.log(`saldo anda saat ini ${saldo}`);
             }
         }
         else if (choice == 2) {
