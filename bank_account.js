@@ -26,7 +26,7 @@ function mainFunction() {
     `);
         if (choice == 1) {
             ubahSaldo = parseInt(window.prompt(tambahWord));
-            if (isNaN(ubahSaldo)) {
+            if (isNaN(ubahSaldo) || ubahSaldo < 0) {
                 alert("input yang anda masukkan tidak valid! ");
             } else {
                 saldo = tambahSaldo(saldo, ubahSaldo);
@@ -34,7 +34,7 @@ function mainFunction() {
         }
         else if (choice == 2) {
             ubahSaldo = parseInt(window.prompt(kurangWord));
-            if (isNaN(ubahSaldo)) {
+            if (isNaN(ubahSaldo) || ubahSaldo < 0) {
                 alert("input yang anda masukkan tidak valid! ");
             }
             else if (saldo < ubahSaldo) {
